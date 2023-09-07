@@ -1,0 +1,244 @@
+html {
+	box-sizing: border-box;
+	background-color: #e2dada;
+}
+
+/* Body width fixing */
+body {
+	max-width: 100%;
+}
+
+#special {
+	text-shadow: 2px 2px 8px #006176;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #2e008a;
+}
+.nav-items {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #2e008a;
+	margin-right: 20px;
+}
+
+.nav-items a {
+	text-decoration: none;
+	color: #ffffff;
+	padding: 35px 20px;
+	transition: color 0.3s ease;
+}
+.nav-items a:hover {
+	color: yellow;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Caprasimo', cursive;
+}
+body {
+	margin: 0;
+}
+.mySlides {
+	display: none;
+}
+img {
+	vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: blue;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+	color: blue;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+	color: #0025dd;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #0025dd;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+	background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+	.prev,
+	.next,
+	.text {
+		font-size: 11px;
+	}
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	vertical-align: text-bottom;
+	text-align: center;
+}
+
+.element {
+	margin: 15px;
+	border: 5px dotted rgb(15, 1, 52);
+	padding: 40px;
+	height: 350px;
+	width: 800px;
+	text-align: justify;
+	background-color: #ebde50;
+	display: inline-block;
+	margin-left: 280px;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.element:hover {
+	background-color: #ffd700; /* Change the background color on hover */
+	transform: scale(1.05); /* Add a scale effect on hover */
+}
+
+/* CSS for footer */
+footer {
+	background-color: rgba(15, 6, 94, 0.979);
+	padding: 10px;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+	color: white;
+}
+
+.search-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+}
+
+#search-box {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	width: 200px; /* Adjust the width as needed */
+}
+
+.search-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80px;
+}
+
+#search-box {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	width: 250px;
+	font-size: 16px;
+}
+
+#search-button {
+	background-color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	margin-left: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+	background-color: yellow;
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Articles</title>
+		<link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+		<link rel="stylesheet" href="/css/article.css" />
+		<style>
+			  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+			  * {
+			    margin: 0;
+			    padding: 0;
+			    box-sizing: border-box;
+			  }
+
+			  body {
+			    color: #000;
+			    font-family: 'Nunito', sans-serif;
+			  }
+
+			  .testimonial {
+			    height: 100%;
+			    display: flex;
+			    flex-direction: column;
+			    justify-content: center;
+			    align-items: center;
+			    padding-bottom: 5rem;
+			  }
+
+			  h1 {
+			    margin: 20px 0;
+			    text-shadow: 2px 2px 5px #020956;
+			  }
+			h4{
+			  margin: auto;
+			  color: darkred;
+			}
+			p.arti {
+			  text-align: center;
+			  color:rgb(69, 58, 58);
+			  text-indent:20px;
+			  letter-spacing:4px;
+
+			}
+			  .line {
+			    height: 2px;
+			    width: 6rem;
+			    background-color: #020956;
+			    margin-bottom: calc(3rem + 2vmin);
+			  }
+
+			  .arrow-wrapper {
+			    position: relative;
+			    width: 70%;
+			    border-radius: 2rem;
+			    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+			    overflow: hidden;
+			    place-items: center;
+			  }
+
+			  .review-wrap {
+			    display: flex;
+			    flex-direction: column;
+			    justify-content: center;
+			    align-items: center;
+			    padding-top: calc(2rem + 1vmin);
+			    width: 100%;
+			  }
+
+			  #imgBox {
+			    border-radius: 50%;
+			    width: calc(6rem + 4vmin);
+			    height: calc(6rem + 4vmin);
+			    position: relative;
+			    box-shadow: 5px -3px #020956;
+			    background-size: cover;
+			    margin-bottom: calc(0.7rem + 0.5vmin);
+			  }
+
+			  #name {
+			    margin-bottom: calc(0.7rem + 0.5vmin);
+			    font-size: calc(1rem + 0.5vmin);
+			    letter-spacing: calc(0.1rem + 0.1vmin);
+			    font-weight: bold;
+			  }
+
+			  #profession {
+			    font-size: calc(0.8rem + 0.3vmin);
+			    margin-bottom: calc(0.7rem + 0.5vmin);
+			    color: #020956;
+			  }
+
+			  #description {
+			    font-size: calc(0.8rem + 0.3vmin);
+			    width: 70%;
+			    max-width: 40rem;
+			    text-align: center;
+			    margin-bottom: calc(1.4rem + 1vmin);
+			    color: rgb(92, 92, 92);
+			    line-height: 2rem;
+			  }
+
+			  .arrow {
+			    width: calc(1.4rem + 0.6vmin);
+			    height: calc(1.4rem + 0.6vmin);
+			    border: solid #020956;
+			    border-width: 0 calc(0.5rem + 0.2vmin) calc(0.5rem + 0.2vmin) 0;
+			    cursor: pointer;
+			    transition: transform 0.3s;
+			  }
+
+			  .arrow:hover {
+			    transition: 0.3s;
+			    transform: scale(1.15);
+			  }
+
+			  .left-arrow-wrap {
+			    position: absolute;
+			    top: 50%;
+			    left: 5%;
+			    transform: rotate(135deg);
+			  }
+
+			  .right-arrow-wrap {
+			    position: absolute;
+			    top: 50%;
+			    right: 5%;
+			    transform: rotate(-45deg);
+			  }
+
+			  @media screen and (max-width: 900px) {
+			    .testimonial {
+			      width: 100%;
+			    }
+			  }
+		</style>
+	</head>
+
+	<body>
+		<header class="header">
+			<nav class="nav-items">
+				<a href="/html/home.html" target="_blank">Home</a>
+				<a href="#" target="_blank">Articles</a>
+				<a href="/html/document.html" target="_blank">Document</a>
+				<a href="/html/aboutme.html" target="_blank">About me</a>
+			</nav>
+		</header>
+
+		<div class="testimonial">
+			<h1>Music Therapy Articles</h1>
+			<br />
+			<h4>What is sound of wood?</h4>
+			<br />
+			<p class="arti">
+				Deliberate work with sound has long had a beneficial effect on
+				the human psyche and health. To work with disadvantaged groups,
+				we have always used tools that excelled in resonance and
+				intuitive approach to playing. Therefore for our therapies we
+				mainly use reed drums, the so-called tongue drum or slit drum.
+				We are glad that our work with people with special needs has
+				also inspired one of the world’s leading manufacturers of these
+				instruments, Boris Čellár. Boris is a musician and his
+				activities include working with people with disabilities. His
+				experience is naturally reflected in the production and concept
+				of this unique musical instrument such as the slit drum -
+				Woodpack. In our music therapy sessions we also use instruments
+				with similar effects during, like tibetan bows, singing bowls,
+				crystal bowls, gongs, monochords, marimba and hand pan.
+			</p>
+			<br />
+			<div class="line"></div>
+			<!-- arrow wrapper contains the review and the arrows -->
+			<div class="arrow-wrapper">
+				<!-- review section -->
+				<div id="reviewWrap" class="review-wrap">
+					<div id="imgBox"></div>
+					<div id="name"></div>
+					<div id="profession"></div>
+					<div id="description"></div>
+				</div>
+				<!-- left arrow -->
+				<div class="left-arrow-wrap">
+					<div class="arrow"></div>
+				</div>
+				<!-- right arrow -->
+				<div class="right-arrow-wrap">
+					<div class="arrow"></div>
+				</div>
+			</div>
+		</div>
+		<script>
+			const reviewWrap = document.getElementById("reviewWrap");
+			const leftArrow = document.querySelector(".left-arrow-wrap .arrow");
+			const rightArrow = document.querySelector(".right-arrow-wrap .arrow");
+			const imgBox = document.getElementById("imgBox");
+			const name = document.getElementById("name");
+			const profession = document.getElementById("profession");
+			const description = document.getElementById("description");
+
+			let people = [{
+			    photo: 'url("https://www.pngitem.com/pimgs/m/22-223925_female-avatar-female-avatar-no-face-hd-png.png ")',
+			    name: "Katarina Reinold",
+			    profession: " music therapist",
+			    description: "In general, it can be stated that Woodpack attracted every child. Not only by its sound, but also by its appearance and material - fragrant wood. Every child was curious how it works and what it does. It fascinated non-verbal children especially with its vibrations.They were laying their head on it, and even asking for it being placed on different parts of their body - on their knees, their back, they lay on a bean bag next to it and put their head on it… Especially these children liked it so much that they themselves intensely asked for it and demanded it. Together with the songs of Musica Medica, this instrument has become a key help for them in relaxing and calming down. It was also interesting for verbal and temperament children, as despite their strength and intense drumming, it still made harmonious, pleasant melodic sounds. The more they hit it, the nicer the melody and they calmed down. Some kept smelling the pleasant smell of the wood and just wanted to touch it and asked me to play our other Woodpack instrument. Both verbal and non-verbal children showed consonance and harmony in musical communication, when we all played together each on our own Woodpack. They were so fascinated by it that they sometimes lasted up to 20 minutes of playing! They were then satisfied and calm."
+			  },
+			  {
+			    photo: "url('https://img.freepik.com/premium-vector/brunette-man-avatar-portrait-young-guy-vector-illustration-face_217290-1035.jpg?w=2000')",
+			    name: "Marcel Ven",
+			    profession: "music therapist",
+			    description: "Autists have mastered the Woodpack straight away, as it does not limit them in anything and has harmoni-ous sounds that can be created without much of an effort. But what is even more important, several times Woodpack created a bridge between the parent and the child, who otherwise could not communicate with each other.I consider the Woodpack instrument ideal for use in music therapy. In my practice with autistic people but also ordinary people who came to play with autistic people, it has proven to be an intuitive musical in-strument on which it is very easy and logical to create sound and melodies and engage in musical thought and events, without unnecessary thinking and learning music theory. At the same time, it is a full-featured instrument for creating music."
+			  },
+			  {
+			    photo: "url('https://www.pngitem.com/pimgs/m/22-223925_female-avatar-female-avatar-no-face-hd-png.png')",
+			    name: "Zuzana Rajcani",
+			    profession: "director of the center",
+			    description: "Woodpack has brought great enrichment to our music therapy work with children with special needs, but also to musical relaxation for adults. Its sound is something new.The velvety sound of the tuned wooden tongues of this beautiful instrument is beautifully complemented by a wide range of sounds and tones of other instruments we work with. It gives us the opportunity to ex-periment, play, combine and discover. Its deep tones are very calming for children. At the same time, within the framework of active musical improvisation, it supports playfulness, opens interaction and commu-nication. It is an extremely enriching addition to our musical instruments. We use it mainly for lying children, who like very much to listen to it in combination with e.g. Kigonki, Monolina. Thus, children with combined multiple disabilities, but also in children with rare diagnoses - tuberous sclerosis, Angelman's syndrome, Down's syndrome, CDKL5. We choose it for active play with children, where we are sure that they will not damage it. Personally, I think it is suitable for listening for all diagnoses! Active play does not depend on the diagnosis, but on the child's temperament to make the instrument last. Even autistic people can be very gentle. Perhaps the only contraindication are dyskinetic forms of DMO, when one cannot control one's movements."
+			  },
+			  {
+			    photo: "url('https://img.freepik.com/premium-vector/brunette-man-avatar-portrait-young-guy-vector-illustration-face_217290-1035.jpg?w=2000')",
+			    name: "Rami Shaafi",
+			    profession: "music therapist, musician",
+			    description: "The Woodpack instruments are the best wooden tongue drums we have ever en-countered. They are made with extra attention to detail, professionally tuned with beautiful overtones and the bonus is they look amazing as well.They are very intuitive to play so anyone can enjoy them from small children to pro-fessional musicians. They are very good for sound therapy too, when you play them you are fully in the moment. Also hearing impaired people can play and enjoy the vibrations of this very special instrument. Highly recommended."
+			  }
+			];
+
+			// set the first person
+			imgBox.style.backgroundImage = people[0].photo;
+			name.innerText = people[0].name;
+			profession.innerText = people[0].profession;
+			description.innerText = people[0].description;
+			let currentPerson = 0;
+
+			//Select the side where you want to slide
+			function slide(side, personNumber) {
+			  let reviewWrapWidth = reviewWrap.offsetWidth + "px";
+			  let descriptionHeight = description.offsetHeight + "px";
+			  //(+ or -)
+			  let side1symbol = side === "left" ? "" : "-";
+			  let side2symbol = side === "left" ? "-" : "";
+
+			  setTimeout(() => {
+			    imgBox.style.backgroundImage = people[personNumber].photo;
+			  }, 0);
+			  setTimeout(() => {
+			    description.style.height = descriptionHeight;
+			  }, 100);
+			  setTimeout(() => {
+			    name.innerText = people[personNumber].name;
+			  }, 200);
+			  setTimeout(() => {
+			    profession.innerText = people[personNumber].profession;
+			  }, 300);
+			  setTimeout(() => {
+			    description.innerText = people[personNumber].description;
+			  }, 400);
+			}
+
+			function setNextCardLeft() {
+			  if (currentPerson === 3) {
+			    currentPerson = 0;
+			    slide("left", currentPerson);
+			  } else {
+			    currentPerson++;
+			  }
+
+			  slide("left", currentPerson);
+			}
+
+			function setNextCardRight() {
+			  if (currentPerson === 0) {
+			    currentPerson = 3;
+			    slide("right", currentPerson);
+			  } else {
+			    currentPerson--;
+			  }
+
+			  slide("right", currentPerson);
+			}
+
+			leftArrow.addEventListener("click", setNextCardLeft);
+			rightArrow.addEventListener("click", setNextCardRight);
+		</script>
+		<footer class="footer">
+			<div class="social-icons">
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-github" aria-hidden="true"></i>
+        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        <i class="fa fa-skype" aria-hidden="true"></i>
+			</div>
+			<p>&copy; 2023 Music Therapy. All rights reserved.This project
+        is being carried out by 'Atousa Heidarnia' for Professor
+        Fabio Vitali's academic assignment.</p>
+		</footer>
+	</body>
+</html>

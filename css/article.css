@@ -1,0 +1,44 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #020956; /* Change to your desired background color */
+	padding: 10px 20px; /* Add padding for spacing */
+  }
+
+  .nav-items {
+	list-style-type: none;
+	display: flex;
+	margin-right: 20px;
+  }
+
+  .nav-items a {
+	text-decoration: none;
+	color: #fff; /* Text color for navigation links */
+	padding: 10px 20px;
+	transition: color 0.3s; /* Smooth color transition on hover */
+  }
+  
+  .nav-items a:hover
+ {color: darkred; /* Change the color on hover */}
+
+.footer {
+	background-color: #020956;
+	text-align: center;
+	padding: 20px;
+	color: #fff;
+  }
+  
+  .social-icons {
+	margin-top: 10px;
+  }
+  
+  .social-icons a {
+	text-decoration: none;
+	margin: 0 10px;
+  }
+  
+  .social-icons img {
+	width: 30px; /* Adjust the size of the social media icons as needed */
+	height: 30px; /* Adjust the size of the social media icons as needed */
+  }
